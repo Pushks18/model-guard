@@ -2,6 +2,11 @@
 
 **Intelligent 3D model validation microservice for dental models** - automatically detect and report geometry or printability issues before 3D printing.
 
+<img width="1752" height="1524" alt="image" src="https://github.com/user-attachments/assets/6600c361-2eb4-4f98-8ce4-20c767df15ac" />
+<img width="1668" height="1274" alt="image" src="https://github.com/user-attachments/assets/7d4a752b-3d92-4c05-91c1-762f18689f50" />
+<img width="849" height="732" alt="Screenshot 2025-10-04 at 6 45 11 PM" src="https://github.com/user-attachments/assets/6da04233-60e0-489a-aea5-1a95c4cc5c81" />
+
+
 ## 🚀 Quick Start
 
 ### Prerequisites
