@@ -1,0 +1,24 @@
+# Backend dependencies
+fastapi
+uvicorn
+python-multipart
+trimesh
+numpy
+pydantic
+
+# Frontend dependencies
+streamlit
+plotly
+
+# Development dependencies
+pytest
+pytest-asyncio
+black
+flake8
+
+# Optional: For advanced mesh processing
+scipy
+scikit-learn
+
+# Note: open3d removed due to architecture compatibility issues on macOS
+# The validator will work without it using trimesh only

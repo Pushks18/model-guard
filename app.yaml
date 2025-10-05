@@ -1,0 +1,42 @@
+# Google App Engine configuration for ModelGuard
+runtime: python311
+
+# Environment variables
+env_variables:
+  PYTHONPATH: /app
+  PORT: 8080
+
+# Automatic scaling
+automatic_scaling:
+  min_instances: 1
+  max_instances: 10
+  target_cpu_utilization: 0.6
+
+# Resources
+resources:
+  cpu: 2
+  memory_gb: 4
+  disk_size_gb: 10
+
+# Health check
+readiness_check:
+  path: "/health"
+  check_interval_sec: 5
+  timeout_sec: 4
+  failure_threshold: 2
+  success_threshold: 2
+
+# Liveness check
+liveness_check:
+  path: "/health"
+  check_interval_sec: 30
+  timeout_sec: 4
+  failure_threshold: 2
+  success_threshold: 2
+
+# Handlers
+handlers:
+  # Backend API
+  - url: /.*
+    script: auto
+    secure: always
